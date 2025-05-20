@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script src="./js/api.js"></script>
+  <script>
+    (async ()=>{
+      const res1=await reg({
+        loginId: "mber124457",
+        nickname: "1535346",
+        loginPwd: "xo@Nf"
+      })
+      console.log(res1);
+      
+      const res2=await login({
+        loginId: "mber124457",
+        loginPwd: "xo@Nf"
+      }).then(res => console.log(res)
+      )
+      console.log(res2);
+      
+    })()
+  </script>
+</body>
+</html>
